@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova 2025</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background layers -->
+    <div id="particles-js"></div>
+    <div class="grid-bg"></div>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo-text">TechNova <span>2025</span></div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero fade-up">
+        <h1>Innovate • Create • Inspire</h1>
+        <p>The Ultimate Student Tech Experience</p>
+        <div class="countdown" id="countdown"></div>
+        <a href="#register" class="btn neon-btn btn-3d">Register Now</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about reveal">
+        <h2 class="title-3d">About TechNova 2025</h2>
+        <p>TechNova 2025 is where innovation meets opportunity. A three-day festival of hackathons, workshops, and tech talks designed for students to learn, compete, and grow.</p>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule reveal">
+        <h2 class="title-3d">Event Schedule</h2>
+        <div class="card-container">
+            <div class="glass-card"><h3>Day 1</h3><p>Opening Ceremony & Hackathon Kickoff</p></div>
+            <div class="glass-card"><h3>Day 2</h3><p>Workshops & Tech Talks</p></div>
+            <div class="glass-card"><h3>Day 3</h3><p>Hackathon Finals & Awards</p></div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="form-section reveal">
+        <h2 class="title-3d">Register Now</h2>
+        <form id="eventForm" class="glass-form">
+            <div class="input-group"><input type="text" id="name" required><label for="name">Your Name</label></div>
+            <div class="input-group"><input type="email" id="email" required><label for="email">Your Email</label></div>
+            <div class="input-group">
+                <select id="event" required>
+                    <option value="">Select Event</option>
+                    <option value="Hackathon">Hackathon</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Tech Talk">Tech Talk</option>
+                </select>
+            </div>
+            <button type="submit" class="btn neon-btn btn-3d">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer><p>© 2025 TechNova | Contact: technova2025@university.com</p></footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p id="modalMessage"></p>
+            <button id="closeModal" class="btn neon-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
